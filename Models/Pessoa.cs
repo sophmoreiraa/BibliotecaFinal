@@ -16,11 +16,11 @@ namespace BibliotecaFinal.Models
 
         [Column("CPF")]
         [Display(Name = "CPF")]
-        public int CPFPessoa { get; set; }
+        public string CPFPessoa { get; set; } = string.Empty;
 
         [Column("TEL")]
         [Display(Name = "TEL")]
-        public int TELPessoa { get; set; }
+        public string TELPessoa { get; set; } = string.Empty;
 
     }
 }
