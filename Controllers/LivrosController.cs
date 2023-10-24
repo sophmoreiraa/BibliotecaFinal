@@ -47,7 +47,7 @@ namespace BibliotecaFinal.Controllers
         // GET: Livros/Create
         public IActionResult Create()
         {
-            ViewData["CategoriaId"] = new SelectList(_context.Categoria, "Id", "Id");
+            ViewData["CategoriaId"] = new SelectList(_context.Categoria, "Id", "CategoriaLivro");
             return View();
         }
 
@@ -64,7 +64,7 @@ namespace BibliotecaFinal.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["CategoriaId"] = new SelectList(_context.Categoria, "Id", "Id", livros.CategoriaId);
+            ViewData["CategoriaId"] = new SelectList(_context.Categoria, "Id", "CategoriaLivro", livros.CategoriaId);
             return View(livros);
         }
 
@@ -81,7 +81,7 @@ namespace BibliotecaFinal.Controllers
             {
                 return NotFound();
             }
-            ViewData["CategoriaId"] = new SelectList(_context.Categoria, "Id", "Id", livros.CategoriaId);
+            ViewData["CategoriaId"] = new SelectList(_context.Categoria, "Id", "CategoriaLivro", livros.CategoriaId);
             return View(livros);
         }
 
@@ -117,7 +117,7 @@ namespace BibliotecaFinal.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["CategoriaId"] = new SelectList(_context.Categoria, "Id", "Id", livros.CategoriaId);
+            ViewData["CategoriaId"] = new SelectList(_context.Categoria, "Id", "CategoriaLivro", livros.CategoriaId);
             return View(livros);
         }
 

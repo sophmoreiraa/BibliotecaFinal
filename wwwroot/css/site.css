@@ -15,9 +15,36 @@ html {
 
 body {
     margin-bottom: 60px;
-    background-color: #FEF7F1;
+    background-color: #FFCCB2;
+    font-size: larger;
 }
 
-nav-item {
-    background-color: #EBB763;
+.menu {
+    background-color: #630700;
+    text-align: right;
+}
+
+header {
+    font-family: monospace;
+   
+}
+
+.navbar-brand {
+    color: white !important;
+}
+.coisalouca-menu {
+    margin-left: 25px;
+}
+.btnbtn-primary {
+    background-color: #dc3545 !important;
+}
+
+.poema {
+    color: #380400;
+    font-family:monospace;
+}
+
+.clarice {
+    color: #380400;
+    font-family: monospace;
 }

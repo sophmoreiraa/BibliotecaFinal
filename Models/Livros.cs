@@ -32,6 +32,7 @@ namespace BibliotecaFinal.Models
         public int PaginasLivros { get; set; }
 
         [ForeignKey("CategoriaId")]
+        [Display(Name = "Categoria")]
         public int CategoriaId { get; set; }
 
         public Categoria? Categoria { get; set; }
